@@ -3164,7 +3164,28 @@ function matchInContainer (text) {
 
 $(editor.getInputField())
     .textcomplete([
+<<<<<<< HEAD
       { 
+=======
+      { // emoji strategy
+        match: /(^|\n|\s)\B:([-+\w]*)$/,
+        search: function (term, callback) {
+          var line = editor.getLine(editor.getCursor().line)
+          term = line.match(this.match)[2]
+          var list = []
+          $.map(supportReferrals.search, function () {
+            if (supportReferrals.search.indexOf(term) === 0) { // match at first character
+              list.push(supportReferrals.text)
+            }
+          })
+          $.map(supportReferrals.search, function () {
+            if (supportReferrals.search.indexOf(term) !== -1) { // match inside the word
+              list.push(supportReferrals.text)
+            }
+          })
+          callback(list)
+        },
+>>>>>>> 0f2391f... suggest changeing emojify to supportReferrals
         replace: function (value) {
           return '$1:' + value + ': '
         },
