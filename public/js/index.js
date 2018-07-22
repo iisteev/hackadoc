@@ -3170,20 +3170,17 @@ $(editor.getInputField())
           var line = editor.getLine(editor.getCursor().line)
           term = line.match(this.match)[2]
           var list = []
-          $.map(window.emojify.emojiNames, function (emoji) {
-            if (emoji.indexOf(term) === 0) { // match at first character
-              list.push(emoji)
+          $.map(supportReferrals.search, function () {
+            if (supportReferrals.search.indexOf(term) === 0) { // match at first character
+              list.push(supportReferrals.text)
             }
           })
-          $.map(window.emojify.emojiNames, function (emoji) {
-            if (emoji.indexOf(term) !== -1) { // match inside the word
-              list.push(emoji)
+          $.map(supportReferrals.search, function () {
+            if (supportReferrals.search.indexOf(term) !== -1) { // match inside the word
+              list.push(supportReferrals.text)
             }
           })
           callback(list)
-        },
-        template: function (value) {
-          return '<img class="emoji" src="' + serverurl + '/build/emojify.js/dist/images/basic/' + value + '.png"></img> ' + value
         },
         replace: function (value) {
           return '$1:' + value + ': '
