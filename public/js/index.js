@@ -228,6 +228,31 @@ const supportExtraTags = [
     }
   }
 ]
+
+const supportIcons = [
+  {
+    text: 'icon:comment[]',
+    search: 'icon:'
+  },
+  {
+    text: 'icon:file[]',
+    search: 'icon:'
+  },
+  {
+    text: 'icon:fire[]',
+    search: 'icon:'
+  },
+  {
+    text: 'icon:tags[]',
+    search: 'icon:'
+  },
+  {
+    text: 'icon:heart[]',
+    search: 'icon:'
+  }
+
+]
+
 const statusType = {
   connected: {
     msg: 'CONNECTED',
@@ -3327,6 +3352,16 @@ $(editor.getInputField())
         context: function (text) {
           return !isInCode
         }
+      },
+      // icons
+      {
+        match: /(^|\n|\s)\B:([-+\w]*)$/,
+        search: function(term, callback){
+          callback($.map(supportIcons, function (icon){
+            return icon.search.indexOf(term) === 0 ? icon.text : null
+          }))
+        }
+
       }
     ], {
       appendTo: $('.cursor-menu')
