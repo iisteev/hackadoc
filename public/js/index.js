@@ -3355,7 +3355,7 @@ $(editor.getInputField())
       },
       // icons
       {
-        match: /(^|\n|\s)\{\}(\w*)$/,
+        match: /(^|\n|\s){\icon:}([\s*\w]*)$/,
         search: function(term, callback){
           callback($.map(supportIcons, function (icon){
             return icon.search.indexOf(term) === 0 ? icon.text : null
