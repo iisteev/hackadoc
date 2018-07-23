@@ -3355,11 +3355,17 @@ $(editor.getInputField())
       },
       // icons
       {
-        match: /(^|\n|\s)\B:([-+\w]*)$/,
+        match: /(^|\n|\s)\{\}(\w*)$/,
         search: function(term, callback){
           callback($.map(supportIcons, function (icon){
             return icon.search.indexOf(term) === 0 ? icon.text : null
           }))
+        },
+        replace: function (value) {
+          return '$1' + value
+        },
+        context: function (text) {
+          return !isInCode
         }
 
       }
