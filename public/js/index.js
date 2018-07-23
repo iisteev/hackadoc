@@ -232,23 +232,23 @@ const supportExtraTags = [
 const supportIcons = [
   {
     text: 'icon:comment[]',
-    search: 'icon:'
+    search: 'icon'
   },
   {
     text: 'icon:file[]',
-    search: 'icon:'
+    search: 'icon'
   },
   {
     text: 'icon:fire[]',
-    search: 'icon:'
+    search: 'icon'
   },
   {
     text: 'icon:tags[]',
-    search: 'icon:'
+    search: 'icon'
   },
   {
     text: 'icon:heart[]',
-    search: 'icon:'
+    search: 'icon'
   }
 
 ]
@@ -3189,18 +3189,6 @@ function matchInContainer (text) {
 
 $(editor.getInputField())
     .textcomplete([
-      { 
-        replace: function (value) {
-          return '$1:' + value + ': '
-        },
-        index: 1,
-        context: function (text) {
-          checkInCode()
-          checkInContainer()
-          checkInContainerSyntax()
-          return !isInCode && !isInContainerSyntax
-        }
-      },
       { // Code block language strategy
         langs: supportCodeModes,
         charts: supportCharts,
@@ -3340,7 +3328,7 @@ $(editor.getInputField())
         }
       },
       { // externals
-        match: /(^|\n|\s)\{\}(\w*)$/,
+        match: /(^|\n|\s)(\w+)$/,
         search: function (term, callback) {
           callback($.map(supportExternals, function (external) {
             return external.search.indexOf(term) === 0 ? external.text : null
@@ -3355,10 +3343,10 @@ $(editor.getInputField())
       },
       // icons
       {
-        match: /(^|\n|\s){\icon:}([\s*\w]*)$/,
+        match: /(^|\n|\s)(\w+)$/,
         search: function(term, callback){
-          callback($.map(supportIcons, function (icon){
-            return icon.search.indexOf(term) === 0 ? icon.text : null
+          callback($.map(supportIcons, function (icons){
+            return icons.search.indexOf(term) === 0 ? icons.text : null
           }))
         },
         replace: function (value) {
