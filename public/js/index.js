@@ -3327,24 +3327,12 @@ $(editor.getInputField())
           return !isInCode
         }
       },
-      { // externals
+      { // externals and icons
         match: /(^|\n|\s)(\w+)$/,
         search: function (term, callback) {
           callback($.map(supportExternals, function (external) {
             return external.search.indexOf(term) === 0 ? external.text : null
-          }))
-        },
-        replace: function (value) {
-          return '$1' + value
-        },
-        context: function (text) {
-          return !isInCode
-        }
-      },
-      // icons
-      {
-        match: /(^|\n|\s)(\w+)$/,
-        search: function(term, callback){
+          })),
           callback($.map(supportIcons, function (icons){
             return icons.search.indexOf(term) === 0 ? icons.text : null
           }))
@@ -3355,7 +3343,6 @@ $(editor.getInputField())
         context: function (text) {
           return !isInCode
         }
-
       }
     ], {
       appendTo: $('.cursor-menu')
