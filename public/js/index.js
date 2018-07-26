@@ -2803,8 +2803,20 @@ function updateViewInner () {
   var lastMeta = md.meta
   md.meta = {}
   delete md.metaError
+<<<<<<< HEAD
   var adoc_options = Opal.hash2(['header_footer','attributes'],{ 'header_footer': true, 'attributes': ['icons=font@', 'showTitle=true']})
   var rendered = adoc.convert(value, adoc_options)
+=======
+
+  //extentions
+  //asciidoctor-plantuml
+  var plantuml = require('asciidoctor-plantuml');
+  plantuml.register(adoc.Extensions);
+
+  var adoc_options = Opal.hash2(['header_footer','attributes'],{ 'header_footer': true, 'attributes': ['icons=font@', 'showTitle=true']});
+  
+  var rendered = adoc.convert(value, adoc_options);
+>>>>>>> 1756f16... plantuml behaves perfectly.
   if (md.meta.type && md.meta.type === 'slide') {
     var slideOptions = {
       separator: '^(\r\n?|\n)---(\r\n?|\n)$',
