@@ -14,12 +14,8 @@
   },
   "dependencies": {
     "Idle.Js": "git+https://github.com/shawnmclean/Idle.js",
-<<<<<<< HEAD
-    "asciidoctor.js": "^1.5.7-beta.1",
-=======
     "asciidoctor.js": "^1.5.6",
     "asciidoctor-plantuml":"^0.8.4",
->>>>>>> 1756f16... plantuml behaves perfectly.
     "async": "^2.1.4",
     "aws-sdk": "^2.7.20",
     "blueimp-md5": "^2.6.0",
