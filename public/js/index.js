@@ -232,23 +232,23 @@ const supportExtraTags = [
 const supportIcons = [
   {
     text: 'icon:comment[]',
-    search: 'icon'
+    search: 'icon:'
   },
   {
     text: 'icon:file[]',
-    search: 'icon'
+    search: 'icon:'
   },
   {
     text: 'icon:fire[]',
-    search: 'icon'
+    search: 'icon:'
   },
   {
     text: 'icon:tags[]',
-    search: 'icon'
+    search: 'icon:'
   },
   {
     text: 'icon:heart[]',
-    search: 'icon'
+    search: 'icon:'
   }
 
 ]
@@ -3328,7 +3328,7 @@ $(editor.getInputField())
         }
       },
       { // externals and icons
-        match: /(^|\n|\s)(\w+)$/,
+        match: /\w*\s*[\:]$/,
         search: function (term, callback) {
           callback($.map(supportExternals, function (external) {
             return external.search.indexOf(term) === 0 ? external.text : null
