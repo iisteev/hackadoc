@@ -419,9 +419,6 @@ http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qui
 [[uml-diagrams]]
 === UML Diagrams
 
-NOTE: TODO enable and describe UML diagrams (sequence diagrams, flow charts, graphviz, mermaid, abc)
-
-////
 [[sequence-diagrams]]
 ==== Sequence Diagrams
 
@@ -473,6 +470,7 @@ digraph hierarchy {
 }
 ----
 
+////
 [[mermaid]]
 ==== Mermaid
 
