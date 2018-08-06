@@ -2831,7 +2831,7 @@ function updateViewInner () {
       rendered = adoc.convert(value, adoc_options)
     }
         // prevent XSS
-    rendered = preventXSS(rendered)
+   // rendered = preventXSS(rendered)
     var result = postProcess(rendered).children().toArray()
     partialUpdate(result, lastResult, ui.area.markdown.children().toArray())
     if (result && lastResult && result.length !== lastResult.length) { updateDataAttrs(result, ui.area.markdown.children().toArray()) }
@@ -2841,9 +2841,9 @@ function updateViewInner () {
   finishView(ui.area.markdown)
   autoLinkify(ui.area.markdown)
   deduplicatedHeaderId(ui.area.markdown)
-  renderTOC(ui.area.markdown)
-  generateToc('ui-toc')
-  generateToc('ui-toc-affix')
+  //renderTOC(ui.area.markdown)
+  //generateToc('ui-toc')
+  //generateToc('ui-toc-affix')
   generateScrollspy()
   updateScrollspy()
   smoothHashScroll()
