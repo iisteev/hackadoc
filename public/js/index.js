@@ -2803,7 +2803,7 @@ function updateViewInner () {
   var lastMeta = md.meta
   md.meta = {}
   delete md.metaError
-
+  
   //extentions
   //asciidoctor-plantuml
   var plantuml = require('asciidoctor-plantuml');
@@ -2848,9 +2848,9 @@ function updateViewInner () {
   finishView(ui.area.markdown)
   autoLinkify(ui.area.markdown)
   deduplicatedHeaderId(ui.area.markdown)
-  renderTOC(ui.area.markdown)
-  generateToc('ui-toc')
-  generateToc('ui-toc-affix')
+  //renderTOC(ui.area.markdown)
+  //generateToc('ui-toc')
+  //generateToc('ui-toc-affix')
   generateScrollspy()
   updateScrollspy()
   smoothHashScroll()
