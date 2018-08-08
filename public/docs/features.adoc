@@ -119,9 +119,7 @@ details.
 [[table-of-contents]]
 === Table of Contents
 
-NOTE: TODO table of content is not working.
 
-////
 You can look at the bottom right section of the view area, there is a _ToC_
 button icon:bars[]. Pressing that button will show you a current _Table of Contents_, and
 will highlight which section you're at. ToCs support *two header levels* by default.
@@ -133,7 +131,6 @@ However, you set a different number of levels using the `toclevel` attribute.
 :toc:
 :toclevels: 3
 ----
-////
 
 [[permalink]]
 === Permalink
@@ -214,8 +211,6 @@ slideOptions:: setup slide mode options
 === ToC
 
 Use the syntax `:toc:` to embed table of content into your note.
-
-NOTE: TODO currently not working
 
 [[emoji]]
 === Emoji
