@@ -229,28 +229,2707 @@ const supportExtraTags = [
   }
 ]
 
-const supportIcons = [
+var supportIcons=[
   {
-    text: 'icon:comment[]',
-    search: 'icon:'
+      text: 'icon:glass[]',
+      search: 'icon:'
   },
   {
-    text: 'icon:file[]',
-    search: 'icon:'
+      text: 'icon:music[]',
+      search: 'icon:'
   },
   {
-    text: 'icon:fire[]',
-    search: 'icon:'
+      text: 'icon:search[]',
+      search: 'icon:'
   },
   {
-    text: 'icon:tags[]',
-    search: 'icon:'
+      text: 'icon:envelope-o[]',
+      search: 'icon:'
   },
   {
-    text: 'icon:heart[]',
-    search: 'icon:'
+      text: 'icon:heart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:star[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:star-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:film[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:th-large[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:th[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:th-list[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:check[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:times[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:search-plus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:search-minus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:power-off[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:signal[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cog[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:trash-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:home[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:clock-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:road[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:download[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-o-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-o-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:inbox[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:play-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:repeat[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:refresh[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:list-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:lock[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:flag[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:headphones[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:volume-off[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:volume-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:volume-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:qrcode[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:barcode[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tag[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tags[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:book[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bookmark[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:print[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:camera[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:font[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bold[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:italic[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:text-height[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:text-width[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:align-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:align-center[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:align-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:align-justify[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:list[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:outdent[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:indent[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:video-camera[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:picture-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pencil[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:map-marker[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:adjust[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tint[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pencil-square-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:share-square-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:check-square-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrows[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:step-backward[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fast-backward[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:backward[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:play[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pause[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stop[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:forward[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fast-forward[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:step-forward[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eject[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:plus-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:minus-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:times-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:check-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:question-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:info-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:crosshairs[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:times-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:check-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ban[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:share[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:expand[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:compress[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:plus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:minus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:asterisk[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:exclamation-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gift[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:leaf[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fire[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eye[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eye-slash[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:exclamation-triangle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:plane[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calendar[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:random[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:comment[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:magnet[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:retweet[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:shopping-cart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:folder[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:folder-open[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrows-v[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrows-h[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bar-chart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:twitter-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:facebook-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:camera-retro[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:key[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cogs[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:comments[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thumbs-o-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thumbs-o-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:star-half[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:heart-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sign-out[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:linkedin-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thumb-tack[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:external-link[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sign-in[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:trophy[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:github-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:upload[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:lemon-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:phone[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:square-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bookmark-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:phone-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:twitter[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:facebook[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:github[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:unlock[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:credit-card[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:rss[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hdd-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bullhorn[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bell[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:certificate[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-o-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-o-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-o-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-o-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:globe[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wrench[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tasks[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:filter[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:briefcase[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrows-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:users[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:link[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cloud[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:flask[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:scissors[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:files-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paperclip[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:floppy-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bars[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:list-ul[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:list-ol[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:strikethrough[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:underline[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:table[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:magic[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:truck[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pinterest[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pinterest-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:google-plus-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:google-plus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:money[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:columns[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-desc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-asc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:envelope[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:linkedin[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:undo[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gavel[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tachometer[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:comment-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:comments-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bolt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sitemap[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:umbrella[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:clipboard[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:lightbulb-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:exchange[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cloud-download[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cloud-upload[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-md[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stethoscope[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:suitcase[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bell-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:coffee[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cutlery[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-text-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:building-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hospital-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ambulance[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:medkit[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fighter-jet[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:beer[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:h-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:plus-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-double-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-double-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-double-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-double-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angle-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:desktop[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:laptop[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tablet[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mobile[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:quote-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:quote-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:spinner[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:reply[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:github-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:folder-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:folder-open-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:smile-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:frown-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:meh-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gamepad[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:keyboard-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:flag-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:flag-checkered[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:terminal[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:code[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:reply-all[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:star-half-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:location-arrow[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:crop[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:code-fork[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chain-broken[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:question[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:info[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:exclamation[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:superscript[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:subscript[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eraser[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:puzzle-piece[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:microphone[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:microphone-slash[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:shield[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calendar-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fire-extinguisher[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:rocket[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:maxcdn[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-circle-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-circle-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-circle-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chevron-circle-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:html5[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:css3[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:anchor[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:unlock-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bullseye[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ellipsis-h[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ellipsis-v[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:rss-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:play-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ticket[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:minus-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:minus-square-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:level-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:level-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:check-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pencil-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:external-link-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:share-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:compass[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-square-o-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-square-o-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-square-o-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eur[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gbp[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:usd[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:inr[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:jpy[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:rub[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:krw[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:btc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-text[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-alpha-asc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-alpha-desc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-amount-asc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-amount-desc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-numeric-asc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sort-numeric-desc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thumbs-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thumbs-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:youtube-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:youtube[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:xing[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:xing-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:youtube-play[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:dropbox[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stack-overflow[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:instagram[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:flickr[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:adn[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bitbucket[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bitbucket-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tumblr[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tumblr-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:long-arrow-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:long-arrow-up[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:long-arrow-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:long-arrow-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:apple[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:windows[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:android[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:linux[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:dribbble[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:skype[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:foursquare[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:trello[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:female[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:male[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gratipay[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sun-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:moon-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:archive[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bug[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:vk[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:weibo[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:renren[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pagelines[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stack-exchange[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-o-right[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:arrow-circle-o-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:caret-square-o-left[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:dot-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wheelchair[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:vimeo-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:try[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:plus-square-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:space-shuttle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:slack[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:envelope-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wordpress[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:openid[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:university[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:graduation-cap[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:yahoo[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:google[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:reddit[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:reddit-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stumbleupon-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stumbleupon[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:delicious[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:digg[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pied-piper-pp[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pied-piper-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:drupal[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:joomla[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:language[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fax[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:building[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:child[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paw[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:spoon[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cube[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cubes[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:behance[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:behance-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:steam[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:steam-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:recycle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:car[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:taxi[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tree[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:spotify[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:deviantart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:soundcloud[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:database[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-pdf-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-word-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-excel-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-powerpoint-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-image-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-archive-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-audio-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-video-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:file-code-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:vine[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:codepen[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:jsfiddle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:life-ring[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:circle-o-notch[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:rebel[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:empire[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:git-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:git[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hacker-news[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tencent-weibo[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:qq[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:weixin[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paper-plane[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paper-plane-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:history[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:circle-thin[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:header[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paragraph[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sliders[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:share-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:share-alt-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bomb[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:futbol-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tty[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:binoculars[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:plug[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:slideshare[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:twitch[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:yelp[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:newspaper-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wifi[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calculator[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paypal[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:google-wallet[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-visa[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-mastercard[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-discover[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-amex[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-paypal[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-stripe[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bell-slash[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bell-slash-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:trash[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:copyright[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:at[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eyedropper[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:paint-brush[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:birthday-cake[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:area-chart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pie-chart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:line-chart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:lastfm[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:lastfm-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:toggle-off[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:toggle-on[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bicycle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ioxhost[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:angellist[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ils[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:meanpath[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:buysellads[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:connectdevelop[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:dashcube[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:forumbee[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:leanpub[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sellsy[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:shirtsinbulk[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:simplybuilt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:skyatlas[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cart-plus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cart-arrow-down[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:diamond[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ship[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-secret[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:motorcycle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:street-view[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:heartbeat[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:venus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mars[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mercury[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:transgender[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:transgender-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:venus-double[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mars-double[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:venus-mars[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mars-stroke[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mars-stroke-v[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mars-stroke-h[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:neuter[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:genderless[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:facebook-official[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pinterest-p[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:whatsapp[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:server[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-plus[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-times[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bed[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:viacoin[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:train[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:subway[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:medium[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:y-combinator[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:optin-monster[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:opencart[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:expeditedssl[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:battery-full[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:battery-three-quarters[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:battery-half[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:battery-quarter[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:battery-empty[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mouse-pointer[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:i-cursor[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:object-group[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:object-ungroup[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sticky-note[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sticky-note-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-jcb[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:cc-diners-club[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:clone[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:balance-scale[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hourglass-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hourglass-start[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hourglass-half[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hourglass-end[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hourglass[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-rock-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-paper-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-scissors-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-lizard-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-spock-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-pointer-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hand-peace-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:trademark[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:registered[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:creative-commons[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gg[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gg-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:tripadvisor[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:odnoklassniki[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:odnoklassniki-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:get-pocket[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wikipedia-w[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:safari[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:chrome[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:firefox[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:opera[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:internet-explorer[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:television[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:contao[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:500px[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:amazon[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calendar-plus-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calendar-minus-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calendar-times-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:calendar-check-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:industry[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:map-pin[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:map-signs[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:map-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:map[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:commenting[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:commenting-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:houzz[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:vimeo[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:black-tie[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fonticons[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:reddit-alien[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:edge[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:credit-card-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:codiepie[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:modx[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:fort-awesome[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:usb[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:product-hunt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:mixcloud[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:scribd[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pause-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pause-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stop-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:stop-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:shopping-bag[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:shopping-basket[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:hashtag[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bluetooth[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bluetooth-b[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:percent[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:gitlab[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wpbeginner[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wpforms[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:envira[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:universal-access[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wheelchair-alt[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:question-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:blind[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:audio-description[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:volume-control-phone[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:braille[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:assistive-listening-systems[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:american-sign-language-interpreting[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:deaf[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:glide[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:glide-g[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:sign-language[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:low-vision[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:viadeo[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:viadeo-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:snapchat[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:snapchat-ghost[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:snapchat-square[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:pied-piper[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:first-order[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:yoast[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:themeisle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:google-plus-official[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:font-awesome[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:handshake-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:envelope-open[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:envelope-open-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:linode[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:address-book[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:address-book-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:address-card[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:address-card-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-circle[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-circle-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:user-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:id-badge[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:id-card[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:id-card-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:quora[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:free-code-camp[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:telegram[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thermometer-full[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thermometer-three-quarters[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thermometer-half[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thermometer-quarter[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:thermometer-empty[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:shower[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bath[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:podcast[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:window-maximize[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:window-minimize[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:window-restore[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:window-close[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:window-close-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:bandcamp[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:grav[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:etsy[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:imdb[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:ravelry[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:eercast[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:microchip[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:snowflake-o[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:superpowers[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:wpexplorer[]',
+      search: 'icon:'
+  },
+  {
+      text: 'icon:meetup[]',
+      search: 'icon:'
   }
-
 ]
 
 const statusType = {
@@ -3328,7 +6007,7 @@ $(editor.getInputField())
         }
       },
       { // externals and icons
-        match: /\w*\s*[\:]$/,
+        match: /(i(?:mage|con):.*)$/,
         search: function (term, callback) {
           callback($.map(supportExternals, function (external) {
             return external.search.indexOf(term) === 0 ? external.text : null
