@@ -6006,15 +6006,14 @@ $(editor.getInputField())
           return !isInCode
         }
       },
-      { // externals and icons
-        match: /(i(?:mage|con):.*)$/,
+      { // icons
+        match: /(^|\n|\s)(i(?:mage|con):.*)$/,
         search: function (term, callback) {
-          callback($.map(supportExternals, function (external) {
-            return external.search.indexOf(term) === 0 ? external.text : null
-          })),
-          callback($.map(supportIcons, function (icons){
-            return icons.search.indexOf(term) === 0 ? icons.text : null
-          }))
+          var list =[]
+          $.map(supportIcons, function (icons){
+            if (icons.search.indexOf(term) === 0) {list.push(icons.text)}
+          })
+          callback(list)
         },
         replace: function (value) {
           return '$1' + value
