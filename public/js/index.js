@@ -6006,6 +6006,22 @@ $(editor.getInputField())
           return !isInCode
         }
       },
+      { // externals
+        match: /(^|\n|\s)(.*)$/,
+        search: function(term, callback){
+          var list = []
+          $.map(supportExternals, function(externals){
+            if (externals.search == term ){ list.push(externals.text)}
+          })
+          callback(list)
+        },
+        replace: function(value){
+          return '$1' + value
+        },
+        context: function(text){
+          return !isInCode
+        }
+      },
       { // icons
         match: /(^|\n|\s)(i(?:mage|con):.*)$/,
         search: function (term, callback) {
