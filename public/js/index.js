@@ -2803,8 +2803,15 @@ function updateViewInner () {
   var lastMeta = md.meta
   md.meta = {}
   delete md.metaError
-  var adoc_options = Opal.hash2(['header_footer','attributes'],{ 'header_footer': true, 'attributes': ['icons=font@', 'showTitle=true']})
-  var rendered = adoc.convert(value, adoc_options)
+  
+  //extentions
+  //asciidoctor-plantuml
+  var plantuml = require('asciidoctor-plantuml');
+  plantuml.register(adoc.Extensions);
+
+  var adoc_options = Opal.hash2(['header_footer','attributes'],{ 'header_footer': true, 'attributes': ['icons=font@', 'showTitle=true']});
+  
+  var rendered = adoc.convert(value, adoc_options);
   if (md.meta.type && md.meta.type === 'slide') {
     var slideOptions = {
       separator: '^(\r\n?|\n)---(\r\n?|\n)$',
@@ -2841,9 +2848,9 @@ function updateViewInner () {
   finishView(ui.area.markdown)
   autoLinkify(ui.area.markdown)
   deduplicatedHeaderId(ui.area.markdown)
-  renderTOC(ui.area.markdown)
-  generateToc('ui-toc')
-  generateToc('ui-toc-affix')
+  //renderTOC(ui.area.markdown)
+  //generateToc('ui-toc')
+  //generateToc('ui-toc-affix')
   generateScrollspy()
   updateScrollspy()
   smoothHashScroll()
