@@ -202,7 +202,6 @@ module.exports = {
       'script!codemirrorInlineAttachment',
       'script!ot',
       'flowchart.js',
-      'js-sequence-diagrams',
       'expose?RevealMarkdown!reveal-markdown',
       path.join(__dirname, 'public/js/google-drive-upload.js'),
       path.join(__dirname, 'public/js/google-drive-picker.js'),
@@ -258,7 +257,6 @@ module.exports = {
       'script!codemirrorInlineAttachment',
       'script!ot',
       'flowchart.js',
-      'js-sequence-diagrams',
       'expose?Viz!viz.js',
       'script!abcjs',
       'expose?io!socket.io-client',
@@ -272,7 +270,6 @@ module.exports = {
       'babel-polyfill',
       'expose?filterXSS!xss',
       'flowchart.js',
-      'js-sequence-diagrams',
       'expose?RevealMarkdown!reveal-markdown',
       path.join(__dirname, 'public/js/pretty.js')
     ],
@@ -300,7 +297,6 @@ module.exports = {
       'expose?filterXSS!xss',
       'script!gist-embed',
       'flowchart.js',
-      'js-sequence-diagrams',
       'expose?Viz!viz.js',
       'script!abcjs',
       'expose?RevealMarkdown!reveal-markdown',
@@ -311,7 +307,6 @@ module.exports = {
       'bootstrap-tooltip',
       'expose?filterXSS!xss',
       'flowchart.js',
-      'js-sequence-diagrams',
       'expose?RevealMarkdown!reveal-markdown',
       path.join(__dirname, 'public/js/slide.js')
     ],
@@ -341,7 +336,6 @@ module.exports = {
       'expose?filterXSS!xss',
       'script!gist-embed',
       'flowchart.js',
-      'js-sequence-diagrams',
       'expose?Viz!viz.js',
       'script!abcjs',
       'headjs',
@@ -410,10 +404,8 @@ module.exports = {
     }, {
       test: /\.less$/,
       loader: ExtractTextPlugin.extract('style-loader', 'less-loader')
-    }, {
-      test: require.resolve('js-sequence-diagrams'),
-      loader: 'imports?_=lodash&Raphael=raphael'
-    }, {
+    }, 
+    {
       test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'file'
     }, {
